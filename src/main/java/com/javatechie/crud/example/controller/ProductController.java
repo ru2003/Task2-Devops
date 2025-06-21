@@ -13,6 +13,11 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "Product service is running!";
+    }
+
     @PostMapping("/addProduct")
     public Product addProduct(@RequestBody Product product) {
         return service.saveProduct(product);

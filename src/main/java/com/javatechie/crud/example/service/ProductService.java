@@ -4,6 +4,7 @@ import com.javatechie.crud.example.entity.Product;
 import com.javatechie.crud.example.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -11,6 +12,11 @@ import java.util.List;
 public class ProductService {
     @Autowired
     private ProductRepository repository;
+
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "Product service is running!";
+    }
 
     public Product saveProduct(Product product) {
         return repository.save(product);
