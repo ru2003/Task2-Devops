@@ -62,7 +62,18 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> searchProducts(String keyword) {
-        return repository.findByNameContainingIgnoreCase(keyword);
+public List<Product> searchProducts(String keyword, String category) {
+    List<Product> result = repository.findByNameContainingIgnoreCaseAndCategoryContainingIgnoreCase(keyword, category);
+    if (result.isEmpty()) {
+        throw new RuntimeException("No products found matching keyword and category.");
     }
+    return result;
+}
+
+    @Override
+    public List<Product> searchProducts(String keyword) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'searchProducts'");
+    }
+
 }

@@ -10,4 +10,6 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     // ✅ Add this new method for /products/search
     List<Product> findByNameContainingIgnoreCase(String keyword);
+    List<Product> findByNameContainingIgnoreCaseAndCategoryContainingIgnoreCase(String keyword, String category);
+
 }

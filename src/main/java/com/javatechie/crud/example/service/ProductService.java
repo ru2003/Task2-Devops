@@ -14,4 +14,6 @@ public interface ProductService {
     Product updateProduct(Product product);
     String deleteProduct(int id);
     List<Product> searchProducts(String keyword); // ✅ for v1.1
+    List<Product> searchProducts(String keyword, String category);//for v2.1
+
 }
