@@ -33,6 +33,11 @@ public class ProductController {
         return service.getProducts();
     }
 
+    @GetMapping("/products/search")
+public List<Product> searchProducts(@RequestParam String keyword) {
+    return service.searchProducts(keyword);
+}
+
     @GetMapping("/productById/{id}")
     public Product findProductById(@PathVariable int id) {
         return service.getProductById(id);
