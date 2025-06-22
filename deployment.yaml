@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: product-service:v1
+          image: siana23/task2-devops:main  # ✅ Change this to your actual image
           ports:
             - containerPort: 8080
