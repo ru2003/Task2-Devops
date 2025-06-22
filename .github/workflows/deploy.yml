@@ -48,9 +48,8 @@ jobs:
 
     - name: Set kubeconfig
   run: |
-    echo "${{ secrets.KUBECONFIG }}" | base64 -d > kubeconfig
+    echo "${{ secrets.KUBECONFIG }}" | base64 -d > $HOME/.kube/config
     echo "Kubeconfig written"
-    export KUBECONFIG=$PWD/kubeconfig
 
 
     - name: Deploy to Kubernetes
