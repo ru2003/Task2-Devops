@@ -71,3 +71,19 @@ docker run -p 8080:8080 product-app
 kubectl apply -f deploy.yml
 kubectl get pods
 kubectl port-forward service/product-service 8080:8080
+
+🔁 CI/CD Pipeline
+The project includes a GitHub Actions workflow (.github/workflows/devops.yml) that:
+
+Builds and pushes the Docker image to DockerHub
+
+Deploys to Kubernetes using a base64 encoded kubeconfig
+
+Secrets used:
+
+DOCKER_USERNAME
+
+DOCKER_PASSWORD
+
+KUBECONFIG
+
