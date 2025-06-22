@@ -79,11 +79,16 @@ Builds and pushes the Docker image to DockerHub
 
 Deploys to Kubernetes using a base64 encoded kubeconfig
 
+
 Secrets used:
-
 DOCKER_USERNAME
-
 DOCKER_PASSWORD
-
 KUBECONFIG
 
+📘 Submission Checklist
+ Microservice source code ✅
+ Dockerfile ✅
+ Kubernetes manifest ✅
+ GitHub Actions workflow ✅
+ README.md, CHANGELOG.md, SYSTEM_DESIGN.md ✅
+ Screenshots/video added ✅
