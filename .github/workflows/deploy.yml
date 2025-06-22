@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: ru2003/task2-devops  # 🔁 Change to your Docker Hub repo
+      IMAGE_NAME: siana23/task2-devops  # 🔁 Change to your Docker Hub repo
       TAG: ${{ github.ref_name }}
 
     steps:
