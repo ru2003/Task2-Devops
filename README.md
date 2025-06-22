@@ -18,7 +18,7 @@ This project is a simple **Product Management Microservice** built with **Spring
 
 version   |    features
 
-| v1.0    | Basic CRUD, Health Check Endpoint                                        |
+| v1.0    | Basic CRUD, Health Check     Endpoint                                        |
 | v1.1    | Added search functionality with keyword filtering                        |
 | v2.0    | Enhanced search with keyword + category, exception handling              |
 
@@ -59,5 +59,15 @@ spring-boot-crud-example-master/
 │
 ├── README.md                              <-- 📄 Project overview & usage instructions
 ├── CHANGELOG.md                           <-- 📜 Version history
-├── SYSTEM_DESIGN.md                       <-- 🧠 Architecture + design overview
+├── SYSTEM_DESIGN.md                       <-- 🧠 
 
+API will run on http://localhost:8080
+
+🐳 Run with Docker : 
+docker build -t product-app .
+docker run -p 8080:8080 product-app
+
+☸️ Deploy on Kubernetes :
+kubectl apply -f deploy.yml
+kubectl get pods
+kubectl port-forward service/product-service 8080:8080
