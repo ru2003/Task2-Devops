@@ -106,6 +106,9 @@ KUBECONFIG	Base64 encoded kubeconfig file
 
 ✅ Screenshots/video added
 
+![image alt](https://github.com/ru2003/Task2-Devops/blob/a4517a390264c45d69a28af82a9385e5ffaa327a/Screenshot%202025-06-23%20000511.png)
+
+
 👩‍💻 Author
 Ruchita Nandakishor Chaudhari
 Spring Boot | DevOps | CI/CD | Java Developer 
