@@ -18,7 +18,7 @@ This project is a simple **Product Management Microservice** built with **Spring
 
 version   |    features
 
-| v1.0    | Basic CRUD, Health Check     Endpoint                                        |
+| v1.0    | Basic CRUD, Health Check     Endpoint                                    |
 | v1.1    | Added search functionality with keyword filtering                        |
 | v2.0    | Enhanced search with keyword + category, exception handling              |
 
@@ -28,57 +28,42 @@ version   |    features
 A simple CRUD microservice using **Spring Boot**, **Docker**, **Kubernetes**, and **CI/CD with GitHub Actions**.
 
 ---
-
 ## 📁 Folder Structure
 
 spring-boot-crud-example-master/
-│
 ├── .github/
 │ └── workflows/
-│ └── deploy.yml # GitHub Actions CI/CD Pipeline
-│
+│ └── deploy.yml <-- GitHub Actions CI/CD Pipeline
 ├── src/
 │ └── main/
 │ ├── java/
 │ │ └── com/javatechie/crud/example/
 │ │ ├── controller/
-│ │ │ └── ProductController.java
 │ │ ├── entity/
-│ │ │ └── Product.java
 │ │ ├── repository/
-│ │ │ └── ProductRepository.java
 │ │ ├── service/
-│ │ │ ├── ProductService.java
-│ │ │ └── ProductServiceImpl.java
 │ │ └── SpringBootCrudExampleApplication.java
-│ │
 │ └── resources/
 │ └── application.properties
-│
-├── Dockerfile # Docker configuration
-├── deployment.yaml # Kubernetes Deployment
-├── service.yaml # Kubernetes Service
-├── k8s-config.yaml # (Optional) Combined K8s manifest
-├── pom.xml # Maven build file
-│
-├── README.md # Project Overview
-├── CHANGELOG.md # Version History
-├── SYSTEM_DESIGN.md # High-level Design
+├── Dockerfile <-- Docker image config
+├── deployment.yaml <-- Kubernetes Deployment
+├── service.yaml <-- Kubernetes Service
+├── pom.xml <-- Maven config
+├── README.md <-- 📄 Project usage instructions
+├── CHANGELOG.md <-- 📜 Version history
+├── SYSTEM_DESIGN.md <-- 🧠 Architecture
 
-yaml
-Copy code
-
+</details>
 ---
 
 ## 🚀 Running the Project
 
 ### 🐳 **Run with Docker**
-```bash
 docker build -t product-app .
 docker run -p 8080:8080 product-app
+
+
 ☸️ Deploy on Kubernetes
-bash
-Copy code
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 kubectl get pods
