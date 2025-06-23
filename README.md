@@ -86,16 +86,19 @@ DOCKER_PASSWORD
 KUBECONFIG
 
 📘 Submission Checklist
+
  Microservice source code ✅
+
  Dockerfile ✅
+
  Kubernetes manifest ✅
+
  GitHub Actions workflow ✅
+
  README.md, CHANGELOG.md, SYSTEM_DESIGN.md ✅
+ 
  Screenshots/video added ✅
 
  👩‍💻 Author
 Ruchita Nandakishor Chaudhari
 Spring Boot | DevOps | CI/CD | Java Developer
-
-
-![image alt](https://github.com/ru2003/Task2-Devops/blob/edc82947bca436810249d743eabdada819b702ac/Screenshot%202025-06-23%20000511.png)
