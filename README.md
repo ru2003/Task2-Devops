@@ -96,3 +96,6 @@ KUBECONFIG
  👩‍💻 Author
 Ruchita Nandakishor Chaudhari
 Spring Boot | DevOps | CI/CD | Java Developer
+
+
+![image alt](https://github.com/ru2003/Task2-Devops/blob/edc82947bca436810249d743eabdada819b702ac/Screenshot%202025-06-23%20000511.png)
